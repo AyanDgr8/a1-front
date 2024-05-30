@@ -1,7 +1,7 @@
 // src/components/routes/Landing/Prime.js
 
 import React from 'react';
-import Header from './Header/Header';
+// import Header from './Header/Header';
 import First from './First/First';
 
 // import LowerFirst from './LowerFirst/LowerFirst';
@@ -16,14 +16,14 @@ import First from './First/First';
 // import Tenth from './Tenth/Tenth';
 // import Eleventh from './Eleventh/Eleventh';
 
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 import LowerFooter from './LowerFooter/LowerFooter';
 
 
-export default function Home(){
+export default function Prime(){
     return (
         <div>
-                <Header />
+                {/* <Header /> */}
                 <First />
                 {/* <LowerFirst /> */}
                 {/* <Fifth />
@@ -40,7 +40,7 @@ export default function Home(){
                 
                 <FormContact /> */}
 
-                <Footer />
+                {/* <Footer /> */}
                 <LowerFooter />
         </div>
     );

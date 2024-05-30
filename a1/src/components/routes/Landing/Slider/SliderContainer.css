@@ -1,0 +1,35 @@
+/* src/components/routes/Landing/SliderContainer/SliderContainer.css */
+
+.SliderContainer-container{
+    background-color: #C01E25;
+}
+
+.SliderContainer-c-heading{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.SliderContainer-c-subheading{
+    font-size: 1.25rem;
+    color: white;
+}
+
+
+.machines-slider{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+
+.slide img{
+    width: 25rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.machines-slider .slick-arrow.slick-prev,
+.machines-slider .slick-arrow.slick-next {
+    display: none !important;
+}

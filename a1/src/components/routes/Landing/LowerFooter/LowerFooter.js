@@ -9,7 +9,7 @@ const LowerFooter = () =>{
         <div>
             <div className='lower-footer-content'>
                 <div className='lower-footer-lines'>
-                    Copyright © 2024. All Rights Reserved by "CompanyName"
+                    Copyright © 2024. All Rights Reserved by Communiaide
                 </div>
             </div>
         </div>
