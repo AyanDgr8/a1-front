@@ -18,11 +18,11 @@ import First from './First/First';
 
 // import Footer from './Footer/Footer';
 import LowerFooter from './LowerFooter/LowerFooter';
-
+import './Prime.css'
 
 export default function Prime(){
     return (
-        <div>
+        <div className='main-page'>
                 {/* <Header /> */}
                 <First />
                 {/* <LowerFirst /> */}

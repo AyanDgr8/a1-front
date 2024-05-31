@@ -1,8 +1,6 @@
 /* src/components/routes/Landing/SliderContainer/SliderContainer.css */
 
-.SliderContainer-container{
-    background-color: #C01E25;
-}
+
 
 .SliderContainer-c-heading{
     font-size: 2.5rem;
@@ -13,6 +11,7 @@
 .SliderContainer-c-subheading{
     font-size: 1.25rem;
     color: white;
+    margin-bottom: 3rem;
 }
 
 
@@ -24,9 +23,9 @@
 }
 
 .slide img{
-    width: 25rem;
+    width: 10rem;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .machines-slider .slick-arrow.slick-prev,

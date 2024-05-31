@@ -11,11 +11,12 @@ import './SliderContainer.css';
 const SliderContainer = () => {
 
     const machineImages =[
-        "/uploads/comm-one.jpg",
-        "/uploads/comm-two.jpg",
-        "/uploads/comm-three.jpg",
-        "/uploads/comm-four.jpg",
-        // "/uploads/comm-five.jpg",
+        "/uploads/comm-1.jpg",
+        "/uploads/comm-2.jpg",
+        "/uploads/comm-3.jpg",
+        "/uploads/comm-4.jpg",
+        "/uploads/comm-5.jpg",
+        "/uploads/comm-6.jpg",
 
     ];
 
@@ -23,7 +24,7 @@ const SliderContainer = () => {
         dots: false,
         infinite: true,
         speed: 2500,
-        slidesToShow: window.innerWidth <= 768 ? 1 : 3, // Show 1 slide on mobile, 3 slides otherwise
+        slidesToShow: window.innerWidth <= 900 ? 1 : 4, // Show 1 slide on mobile, 3 slides otherwise
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 500,
@@ -38,7 +39,7 @@ const SliderContainer = () => {
             <Slider {...sliderSettings} className='machines-slider'>
                 {machineImages.map((image, index) => ( 
                 <div key={index} className="slide">
-                    <img src={image} alt={`Machine Image ${index + 1}`} /> 
+                    <img src={image} alt={`Brands ${index + 1}`} /> 
                 </div>
                 ))}
             </Slider>
