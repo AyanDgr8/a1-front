@@ -3,44 +3,25 @@
 import React from 'react';
 // import Header from './Header/Header';
 import First from './First/First';
-
-// import LowerFirst from './LowerFirst/LowerFirst';
-// import Second from './Second/Second';
-// import Third from './Third/Third';
-// import Forth from './Forth/Forth';
-// import Fifth from './Fifth/Fifth';
-// import Sixth from './Sixth/Sixth';
-// import Seventh from './Seventh/Seventh';
-// import Eighth from './Eighth/Eighth';
-// import Ninth from './Ninth/Ninth';
-// import Tenth from './Tenth/Tenth';
-// import Eleventh from './Eleventh/Eleventh';
-
-// import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';
 import LowerFooter from './LowerFooter/LowerFooter';
+import { Link } from 'react-router-dom';
+
 import './Prime.css'
 
 export default function Prime(){
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <div className='main-page'>
                 {/* <Header /> */}
                 <First />
-                {/* <LowerFirst /> */}
-                {/* <Fifth />
-                <Forth />
-                <Second /> 
-                <Third />
-                <Sixth />
-                <Seventh />
-                <Video />
-                <Eighth />
-                <Tenth />
-                <Ninth />
-                <Eleventh />
+                <Footer />
                 
-                <FormContact /> */}
+                <Link to="/terms" className="btn btn-primary button-h" rel="noopener noreferrer" onClick={scrollToTop}>Check our Terms & Conditions</Link>
 
-                {/* <Footer /> */}
                 <LowerFooter />
         </div>
     );

@@ -1,111 +1,80 @@
 /* src/components/routes/LandingPage/Footer/Footer.css */
 
-.footer-container{ 
-    height: 55vh;
-    background-color: #380E0A;
-    display: flex;
-    flex-direction: row;
+
+.footer-container{
     margin: auto;
-    margin-top: -1vh;
-    margin-bottom: 0.5rem;
-}
-
-.snylloair-footer{
-    width:15rem;
-    height:11rem;
+    margin-bottom: 3rem;
     margin-top: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
 }
 
-.footer-column-two,
-.footer-column-three,
-.footer-column-four,
-.footer-column-five{
-    display:flex;
-    flex-direction: column;
-    margin-left: 2rem;
-    align-items: flex-start;
-    width:12rem;
-}
-
-.footer-column-five{
-    
-    margin-left: -2rem;
+.cont-heading{
+    font-size: 2.5em;
+    font-weight: 700;
 
 }
 
-.footer-column-two >h3,
-.footer-column-three >h3,
-.footer-column-four >h3,
-.footer-column-five >h3{
-    font-size:1.5rem;
-    margin-top: 4rem;
-    color:#CE3B3C;   
+.cont-subheading{
+    font-size: 1.1em;
+    width: 42%;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
-.linkis{
+.deets{
+    display: inline;
+    margin:5rem ;
+    font-size: large;
+}
+
+.deetss{
+    margin:1rem ;
+    font-size: large;
+}
+
+
+.cont-links{
     text-decoration: none;
-    line-height: 1.25; 
-    font-size: 1rem;
-    margin-top:1rem;
-}
-
-.button-footer{
-    text-decoration: none; 
-    color: white; 
-    font-size: 1.1rem;
-}
-
-.button-footer:hover{
-    color:#CE3B3C;
+    color: #969AFF;
 }
 
 
-
-.footer-column-5-icons{
-    display: flex;
-    flex-direction: row;
-    margin-left: -0.5vw;
-}
-
-.footer-icons{
-    margin: 1vh;
-    height: 5vh;
-}
-
-.icon-four{
-    height: 4vh;
-    margin-top: 1.5vh;
+/* t&c */
+.button-h {
+    background-color: #7160ce21;
+    border: 1px solid;
+    border: none;
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 
 /* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 900px) {
 
-@media only screen and (min-width: 320px) and (max-width: 750px) {
+
+    .cont-heading{
+        margin-bottom: 1rem;
     
-    .footer-container{ 
-        height: auto;
-        display: flex;
-        flex-direction: column;
+    }
+    
+
+    .cont-subheading{
+        width: 90%;
         margin: auto;
+        margin-bottom: 2rem;
     }
 
-    .snylloair-footer{
-        width:15rem;
-        height:11rem;
-        margin-top: 5rem;
+    .deets{
+        display: block;
+        margin:auto ;
+        margin-bottom: 1rem;
     }
 
-    .footer-column-two,
-    .footer-column-three,
-    .footer-column-four,
-    .footer-column-five{
-        display:flex;
-        flex-direction: column;
-        margin-left: 6rem;
-        align-items: center;
+    
+
+    .button-h{
+        width: 60%;
     }
-
-
 }

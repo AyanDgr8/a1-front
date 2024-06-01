@@ -1,0 +1,29 @@
+/* src/components/routes/Landing/Terms/Terms.css */
+
+
+.terms-container{
+    background-color: #161730;
+    color: white;
+    margin: auto;
+}
+
+.terms-heading{
+    font-size: 2.5em;
+}
+
+.terms-section{
+    text-align: left;
+    margin: auto;
+    width: 90vw;
+    margin-top: 3rem;
+}
+
+.terms-subheadings{
+    font-size: 1.75em;
+}
+
+.terms-sheadings{
+    font-size: 1.4em;
+    text-decoration:underline;
+
+}
