@@ -1,15 +1,27 @@
 // src/components/routes/Landing/Header/Header.js
 
-
-import React, { useState }  from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () =>{
-    return(
-        <div>
+const Header = () => {
 
-        </div>
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
+    return (
+        <nav className="navbar headerr">
+            <div className="container">
+                <Link to="/" className="navbar-brand" onClick={scrollToTop}>
+                    <img 
+                        src="./uploads/com-logo.ico" 
+                        className="main-logo" 
+                        alt="brand" 
+                    />
+                </Link>
+            </div>
+        </nav>
     );
 };
 

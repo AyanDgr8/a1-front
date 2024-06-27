@@ -2,48 +2,86 @@
 
 
 .footer-container{
-    margin: auto;
-    margin-bottom: 3rem;
-    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: black;
+    overflow: hidden;
+    color: black;
+    overflow: hidden;
 }
 
-.cont-heading{
-    font-size: 2.5em;
-    font-weight: 700;
 
+.footer-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -300px;
+    width: 800px;
+    height: 1000px;
+    background: linear-gradient(70deg, #651FFF 40%, #00BCD4 92.81%);
+    opacity: 0.25; 
+    transform: rotate(50deg);
+    z-index: -10; 
 }
 
-.cont-subheading{
-    font-size: 1.1em;
-    width: 42%;
-    margin: auto;
-    margin-bottom: 2rem;
+.footer-container::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    width: 800px;
+    height: 750px;
+    background: linear-gradient(120deg, #651FFF 15%, #00BCD4 95%);
+    opacity: 0.25;
+    transform: rotate(-20deg);
+    z-index: -10; 
+}
+
+.footer-content-first,
+.footer-content-second,
+.footer-content-third{
+    width: 30%;
+    margin-top: 3rem;
+}
+
+.footer-logo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .deets{
-    display: inline;
-    margin:5rem ;
-    font-size: large;
-}
-
-.deetss{
     margin:1rem ;
     font-size: large;
+    text-align: left;
+    margin-top: 3rem;
 }
 
+.social-links{
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.social-icon{
+    margin: 1rem;
+    width: 1.5rem;
+}
 
 .cont-links{
     text-decoration: none;
-    color: #969AFF;
+    color: #292a5c;
 }
 
 
 /* t&c */
 .button-h {
-    background-color: #7160ce21;
+    background-color: #2802ffb6;
     border: 1px solid;
     border: none;
-    width: 20vw;
+    width: 15vw;
     margin: auto;
     margin-bottom: 1rem;
     text-decoration: none;

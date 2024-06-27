@@ -32,9 +32,12 @@ const SliderContainer = () => {
 
     return(
         <div className='SliderContainer-container'>
-            <div className='SliderContainer-c-heading'>Our Clients</div>
-            <div className='SliderContainer-c-subheading'>Transforming Visions into Reality through Strategic Innovation</div>
-
+            
+                
+            <div className='headings sl-heading'>
+                <div className='heading-1'>PARTNERS</div>
+                <div className='heading-2'>Our Clients</div>
+            </div>
             
             <Slider {...sliderSettings} className='machines-slider'>
                 {machineImages.map((image, index) => ( 

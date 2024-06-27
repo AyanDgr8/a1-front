@@ -1,0 +1,52 @@
+/* src/components/routes/Advertise/Advertise.css */
+
+
+.adv-super-container{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.adv-super-container::before {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    width: 900px;
+    height: 1050px;
+    background: linear-gradient(40deg, #651FFF 9.95%, #00BCD4 92.81%);
+    opacity: 0.25; 
+    transform: rotate(-65deg);
+    z-index: -10; 
+}
+
+.adv-super-container::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 760px;
+    height: 650px;
+    background: linear-gradient(58.27deg, #651FFF 9.95%, #00BCD4 92.81%);
+    opacity: 0.25;
+    transform: rotate(65deg);
+    z-index: -10; 
+}
+
+.adv-super-content{
+    margin-top: 12rem;
+}
+
+.tt-2{
+    font-family: 'TT Norms', sans-serif;
+}
+.adv-super-para {
+    width: 75%;
+    background-color: #3fb0be71;
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    margin: auto;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}

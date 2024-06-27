@@ -2,6 +2,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './First.css';
 import SliderContainer from '../Slider/SliderContainer';
 
@@ -9,6 +10,13 @@ const First = () => {
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
+    };
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -19,7 +27,7 @@ const First = () => {
 
             <section className='super-container'>
                     <img 
-                    src="/uploads/comm-two.jpg"
+                    src="/uploads/com-1.webp"
                     className='super-img'
                     alt="Super Background Image"
                     />
@@ -30,6 +38,17 @@ const First = () => {
                     <div className='super-container-line2'>
                         Transforming Ideas into Impactful Experiences with Innovative Storytelling and Strategic Creativity.
                     </div>
+                    
+                    <div  className='super-container-btns'>
+                        <button type="button" className="btn btn-info explore_btn" 
+                            onClick={() => scrollToSection('info-section')}>EXPLORE PROJECT</button>
+                        <button type="button" className="btn btn-light contact_btn"
+                            onClick={() => scrollToSection('info-section')}>CONTACT US</button>
+                    </div>
+
+                    <div className='super-container-satisfied'>
+                        500+ Satisfied Clients
+                    </div>
                 </div>
 
             </section>
@@ -38,22 +57,18 @@ const First = () => {
             {/* **********WHO WE ARE************* */}
 
             <section className='about-container'>
-                <img 
-                    src="./uploads/about-bg.jpg" 
-                    className="about-bg" 
-                    alt="about-bg" 
-                />
                 <div className='about-content'>
-                    <div className='about-heading'>Who We Are</div>
+
+                    <div className='headings animate-on-scroll'>
+                        <div className='heading-1'>OUR IDENTITY</div>
+                        <div className='heading-2'>Who We Are</div>
+                    </div>
                     <div className="row d-flex justify-content-center">
-                        <div className="col-md-8">
+                        <div className="col-md-10">
                             <div className="card border-0 about-card">
                                 <div className="card-body">
                                     <p className="card-text">
-                                        At Communiaide, we ignite growth and transformation for brands by seamlessly merging language and visuals. <br></br>
-                                        With a holistic approach and a willingness to take strategic risks, we dive deep into consumer insights, crafting bespoke strategies that elevate brands to new heights, ensuring lasting success. <br></br>
-                                        Our specialization in brand strategies, digital marketing, and content creation allows us to streamline processes for maximum efficiency.
-                                        Trust us to captivate audiences across all media formats, from traditional to digital platforms, delivering impactful and engaging experiences.
+                                        At Communiaide, we ignite growth and transformation for brands by seamlessly merging language and visuals. With a holistic approach and a willingness to take strategic risks, we dive deep into consumer insights to craft bespoke strategies that elevate brands to new heights, ensuring lasting success.
                                     </p>
                                 </div>
                                 
@@ -66,201 +81,114 @@ const First = () => {
 
             {/* ********HOW WE WORK************** */}
 
-            <section className='work-cards'>
-                <div className='work-heading'>How We Work</div>
+            <section className='work-container'>
 
-                <div className='work-containers'>
-
-                    <div className='work-container w-1'>
-                        <div className='work-card-left'>
-                            <img 
-                                src="/uploads/work-one.jpg"
-                                className="work-imgs w-1-img"
-                                alt="work-imgs-1"
-                            />
-                        </div>
-                        <div className='work-card-right'>
-                            <div className='card-cont'>
-                                <div className='work-title'>Discovery & Strategic Planning</div>
-                                <div className='work-text'>
-                                Are you on a quest for an advertising agency that questions, imagines, 
-                                and throws away the box because they could never think inside it? 
-                                Then Communiaide's ability to re-imagine realities for the brand and 
-                                restructure it into impactful experiences is the answer for you. 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='work-container w-2'>
-                        <div className='work-card-left'>
-                            <img 
-                                src="/uploads/work-two.jpg"
-                                className="work-imgs"
-                                alt="work-imgs-2"
-                            />
-                        </div>
-                        <div className='work-card-right'>
-                            <div className='card-cont'>
-                                <div className='work-title'>Creative Development & Execution</div>
-                                <div className='work-text'>
-                                    Our ensemble of passionate Creative Directors, Art Directors, Copywriters, 
-                                    Film Directors, Cinematographers, Production Designers, Sound Designers, VFX Editors, 
-                                    Content Strategists, UX Designers, AI Specialists, and Digital Marketing Managers 
-                                    are constantly revolutionizing storytelling and finding innovative ways to captivate audiences.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='work-container w-3'>
-                        <div className='work-card-left'><img 
-                                src="/uploads/work-three.jpg"
-                                className="work-imgs"
-                                alt="work-imgs-3"
-                            />
-                        </div>
-                        <div className='work-card-right'>
-                            <div className='card-cont'>
-                                <div className='work-title'>Analysis & Growth Optimization</div>
-                                <div className='work-text'>
-                                    With each project we take on, we strive to create a dynamic branding solution 
-                                    that captures their essence and holds an emotional value to transform their tomorrow. 
-                                    We continuously monitor performance metrics and gather feedback post-launch, 
-                                    optimizing our strategies to ensure your brand continues to grow and adapt 
-                                    in an ever-evolving market.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div className='headings'>
+                    <div className='heading-1'>OUR PROCESS</div>
+                    <div className='heading-2'>How We Work</div>
                 </div>
-            </section>
 
-
-            {/* **********SERVICES************* */}
-
-            <section className='services-cards'>
-                <img 
-                    src="./uploads/services-bg.jpg" 
-                    className="services-bg" 
-                    alt="services-bg" 
-                />
-                <div className='services-content'>
-                    <div className='services-heading'>Our Services</div>
-                    <div className="row d-flex justify-content-center">
-                        <div className="row row-cols-1 row-cols-md-3 g-4">
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-one.jpg" 
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Brand Strategy</h5>
-                                        <p className="card-text">
-                                            Develop bespoke strategies that resonate with your audience and elevate your brand above the competition.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-two.jpg" 
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Digital Marketing</h5>
-                                        <p className="card-text">
-                                            Leverage cutting-edge digital marketing techniques to captivate your audience and drive growth across all platforms.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-three.jpg"
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Content Creation</h5>
-                                        <p className="card-text">
-                                            Produce engaging and visually stunning content that tells your brand's story and leaves a lasting impression.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-four.jpg"
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Community Building</h5>
-                                        <p className="card-text">
-                                            Expand your reach and foster lasting relationships with your audience through strategic community building.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-six.jpg"
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">SEO & Content Marketing</h5>
-                                        <p className="card-text">
-                                            Improve your search engine rankings and create compelling content that drives traffic and engagement.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col cardddd">
-                                <div className="card border border-0 cardd">
-                                    <img 
-                                        src="./uploads/service-seven.jpg"
-                                        className="position-relative top-0 start-50 translate-middle img-icon" 
-                                        alt="service-icon"
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Email Campaigns</h5>
-                                        <p className="card-text">
-                                            Build lasting relationships with targeted email campaigns that keep your customers engaged and informed.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
+                <div className='work-work'>
+                    <img 
+                        src="./uploads/com-2.webp" 
+                        className="work-bg" 
+                        alt="work-bg" 
+                    />
+                    <div className='work-cards'>
+                        <div className='work-card-1 work-card'>
+                            <div className='work-card-heading'>Innovative Thinking</div>
+                            <p>We challenge norms to create unique, impactful brand experiences.</p>
+                        </div>
+                        <div className='work-card-2 work-card'>
+                            <div className='work-card-heading'>Collaborative Approach</div>
+                            <p>We partner closely with clients to tailor strategies and campaigns.</p>
+                        </div>
+                        <div className='work-card-3 work-card'>
+                            <div className='work-card-heading'>Holistic Execution</div>
+                            <p>We manage the entire creative process for seamless, high-quality results.</p>
                         </div>
                     </div>
                 </div>
+
+            </section>
+
+            
+            {/* **********CATEGORIES************* */}
+
+            <section className='categories-container'>
+                
+                <div className='headings'>
+                    <div className='heading-1'>EXPLORE</div>
+                    <div className='heading-2'>Our Categories</div>
+                </div>
+
+                <div className='categories-cards'>
+                    <div className='categories-sub-cards'>
+                        <span className='category-card'>
+                            <Link to="/digital-marketing" onClick={scrollToTop}>
+                                <img 
+                                    src='./uploads/com-3.webp'
+                                    className='categories-card-1'
+                                    alt="categories-card-1"
+                                />
+                                <div className='overlay'>
+                                    <div className='text'>Explore Digital Marketing</div>
+                                </div>
+                            </Link>
+                        </span>
+
+                        <span className='category-card'>
+                        <Link to="/advertisement" onClick={scrollToTop}>
+                                <img 
+                                    src='./uploads/com-4.webp'
+                                    className='categories-card-2'
+                                    alt="categories-card-2"
+                                />
+                                <div className='overlay'>
+                                    <div className='text'>Explore UX/UI</div>
+                                </div>
+                            </Link>
+                        </span>
+                    </div>
+                    <div className='categories-sub-cards'>
+                        <span className='category-card'>
+                            <Link to="/advertisement" onClick={scrollToTop}>
+                                <img 
+                                    src='./uploads/com-5.webp'
+                                    className='categories-card-1'
+                                    alt="categories-card-3"
+                                />
+                                <div className='overlay'>
+                                    <div className='text'>Explore Advertisement Shoot</div>
+                                </div>
+                            </Link>
+                        </span>
+                        <span className='category-card'>
+                            <img 
+                                src='./uploads/com-6.webp'
+                                className='categories-card-2'
+                                alt="categories-card-4"
+                            />
+                            <div className='overlay'>
+                                <div className='text'>Explore Brand Strategy</div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                
             </section>
 
 
-
-            {/* ********************** */}
+            {/* *******VIDEOS******* */}
 
 
             <section className="video-container" >
-                <div className="video-heading">Our Work</div>
+                
+                <div className='headings'>
+                    <div className='heading-1'>TRENDING</div>
+                    <div className='heading-2'>Top Collection</div>
+                </div>
+
                 <div className="video-half-container">
                     <div className="video-half">
                         <iframe 
@@ -306,6 +234,64 @@ const First = () => {
                     </div>
                 </div>
             </section>
+
+            {/* *******TEAM******** */}
+
+            <section className='team-container'>
+                
+                <div className='headings'>
+                    <div className='heading-1'>TEAM</div>
+                    <div className='heading-2'>Our People</div>
+                </div>
+
+                <div className='team-members'>
+                    <span className='team-member'>
+                        <img 
+                            src="./uploads/com-7.webp"
+                            className='member-1 memb'
+                            alt='member-1'
+                        />
+                        <div className='overlayy'>
+                            <div className='text'>Name</div>
+                        </div>
+                    </span>
+                    <span className='team-member'>
+                        <img 
+                            src="./uploads/com-8.webp"
+                            className='member-2 memb'
+                            alt='member-2'
+                        />
+                        <div className='overlayy'>
+                            <div className='text'>Name</div>
+                        </div>
+                    </span>
+                    <span className='team-member'>
+                        <img 
+                            src="./uploads/com-9.webp"
+                            className='member-3 memb'
+                            alt='member-3'
+                        />
+                        <div className='overlayy'>
+                            <div className='text'>Name</div>
+                        </div>
+                    </span>
+                    <span className='team-member'>
+                        <img 
+                            src="./uploads/com-10.webp"
+                            className='member-4 memb'
+                            alt='member-4'
+                        />
+                        <div className='overlayy'>
+                            <div className='text'>Name</div>
+                        </div>
+                    </span>
+                </div>
+
+
+            </section>
+
+
+
 
             {/* *************** */}
 

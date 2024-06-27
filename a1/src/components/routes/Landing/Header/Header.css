@@ -1,1 +1,15 @@
 /* src/components/routes/Landing/Header/Header.css */
+
+
+.headerr{
+    position: absolute;
+    top:1rem;
+    z-index: 1;
+    margin-left: 1rem;
+}
+
+
+.main-logo {
+    width: 6rem;
+    height: 4rem;
+}
