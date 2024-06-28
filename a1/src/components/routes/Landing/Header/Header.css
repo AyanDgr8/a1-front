@@ -10,6 +10,20 @@
 
 
 .main-logo {
-    width: 6rem;
-    height: 4rem;
+    width: 12rem;
+    height: 6rem;
+}
+
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+    
+    .headerr{
+        margin-left: 0.5rem;
+    }
+    
+    .main-logo {
+        width: 10rem;
+        height: 5rem;
+    }
 }

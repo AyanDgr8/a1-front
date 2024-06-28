@@ -11,12 +11,13 @@ import './SliderContainer.css';
 const SliderContainer = () => {
 
     const machineImages =[
-        "/uploads/comm-1.jpg",
-        "/uploads/comm-2.jpg",
-        "/uploads/comm-3.jpg",
-        "/uploads/comm-4.jpg",
-        "/uploads/comm-5.jpg",
-        "/uploads/comm-6.jpg",
+        "/uploads/comm-1.webp",
+        "/uploads/comm-2.webp",
+        "/uploads/comm-3.webp",
+        "/uploads/comm-4.webp",
+        "/uploads/comm-5.webp",
+        "/uploads/comm-6.webp",
+        "/uploads/comm-7.webp",
 
     ];
 

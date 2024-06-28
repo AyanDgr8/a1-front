@@ -41,9 +41,11 @@ const First = () => {
                     
                     <div  className='super-container-btns'>
                         <button type="button" className="btn btn-info explore_btn" 
-                            onClick={() => scrollToSection('info-section')}>EXPLORE PROJECT</button>
+                            onClick={() => scrollToSection('categories-container')}>EXPLORE PROJECT
+                        </button>
                         <button type="button" className="btn btn-light contact_btn"
-                            onClick={() => scrollToSection('info-section')}>CONTACT US</button>
+                            onClick={() => scrollToSection('footer-sect')}>CONTACT US
+                        </button>
                     </div>
 
                     <div className='super-container-satisfied'>
@@ -115,7 +117,7 @@ const First = () => {
             
             {/* **********CATEGORIES************* */}
 
-            <section className='categories-container'>
+            <section id="categories-container" className='categories-container'>
                 
                 <div className='headings'>
                     <div className='heading-1'>EXPLORE</div>
@@ -138,14 +140,14 @@ const First = () => {
                         </span>
 
                         <span className='category-card'>
-                        <Link to="/advertisement" onClick={scrollToTop}>
+                        <Link to="/ui-ux" onClick={scrollToTop}>
                                 <img 
                                     src='./uploads/com-4.webp'
                                     className='categories-card-2'
                                     alt="categories-card-2"
                                 />
                                 <div className='overlay'>
-                                    <div className='text'>Explore UX/UI</div>
+                                    <div className='text'>Explore UI/UX</div>
                                 </div>
                             </Link>
                         </span>
@@ -164,14 +166,16 @@ const First = () => {
                             </Link>
                         </span>
                         <span className='category-card'>
-                            <img 
-                                src='./uploads/com-6.webp'
-                                className='categories-card-2'
-                                alt="categories-card-4"
-                            />
-                            <div className='overlay'>
-                                <div className='text'>Explore Brand Strategy</div>
-                            </div>
+                            <Link to="/branding" onClick={scrollToTop}>
+                                <img 
+                                    src='./uploads/com-6.webp'
+                                    className='categories-card-2'
+                                    alt="categories-card-4"
+                                />
+                                <div className='overlay'>
+                                    <div className='text'>Explore Brand Strategy</div>
+                                </div>
+                            </Link>
                         </span>
                     </div>
                 </div>
@@ -240,8 +244,8 @@ const First = () => {
             <section className='team-container'>
                 
                 <div className='headings'>
-                    <div className='heading-1'>TEAM</div>
-                    <div className='heading-2'>Our People</div>
+                    <div className='heading-1 t-h1'>TEAM</div>
+                    <div className='heading-2 t-h2'>Our People</div>
                 </div>
 
                 <div className='team-members'>

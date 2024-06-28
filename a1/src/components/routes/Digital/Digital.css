@@ -8,7 +8,7 @@
     position: relative;
     background-color: #000000c5;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -152,4 +152,109 @@
 
 .card-t-para{
     font-size: 1.1rem;
+}
+
+/* for mobile screens  */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .digital-super-container {
+        background-color: #0e0d0d91;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+    
+    .digital-bg {
+        left: -5rem;
+        width: auto;
+        height: 90vh;
+    }
+
+    
+    .digital-super-content {
+        margin-top: 5rem;
+    }
+    .digital-super-para {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    
+
+    /* ********* */
+
+    .digital-cards-container{
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .digital-f-cards{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .card-icon{
+        width: 40%;
+        margin: auto;
+    }
+
+    /* *************** */
+
+    .digi-content-img{
+        flex-direction: column-reverse;
+    }
+
+.digital-t-cards-container::before {
+    top: 30px;
+    left: 100px;
+}
+
+.digital-t-cards-container::after {
+    top: 1400px;
+    left: 50px;
+    width: 760px;
+    height: 650px;
+    background: linear-gradient(158.27deg, #651FFF 9.95%, #00BCD4 92.81%); 
+    transform: rotate(-130deg); 
+}
+
+.digital-t-cards-bg{
+    width: 90%;
+}
+
+
+.digital-t-cards{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+.card-left {
+    margin-left: 4rem;
+}
+
+.card-right {
+    margin-right: 4rem;
+}
+
+.card-t-heading{
+    font-size: 1.5rem;
+}
+
+.card-t-para{
+    font-size: 1.1rem;
+}
+
+
+
+    
 }

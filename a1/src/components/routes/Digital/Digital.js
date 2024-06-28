@@ -103,8 +103,8 @@ const Digital =  () =>{
                     <div className="digital-t-cards-right">
                         <img 
                             src="./uploads/com-3.jpg"
-                            className="digital-t-cards-img"
-                            alt="digital-t-cards-img"
+                            className="digital-t-cards-bg"
+                            alt="digital-t-cards-bg"
                         />
                     </div>
 

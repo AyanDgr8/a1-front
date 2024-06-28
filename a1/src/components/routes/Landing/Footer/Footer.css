@@ -6,9 +6,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
-    margin-top: 2rem;
-    color: black;
-    overflow: hidden;
+    margin-top: 1rem;
     color: black;
     overflow: hidden;
 }
@@ -43,8 +41,7 @@
 .footer-content-first,
 .footer-content-second,
 .footer-content-third{
-    width: 30%;
-    margin-top: 3rem;
+    width: 33.33%;
 }
 
 .footer-logo{
@@ -52,17 +49,44 @@
     margin-bottom: 1rem;
 }
 
-.deets{
-    margin:1rem ;
-    font-size: large;
+/* ******* */
+
+.footer-logo{
+    width: 15rem;
+}
+
+.footer-content-second{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 5rem;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: #292a5c;
+    font-size: larger;
+    font-weight: 600;
     text-align: left;
-    margin-top: 3rem;
+}
+
+/* ************ */
+
+.footer-content-third{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 5rem;
+}
+.deets{
+    font-size: larger;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .social-links{
-    margin: auto;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .social-icon{
@@ -75,44 +99,64 @@
     color: #292a5c;
 }
 
-
-/* t&c */
-.button-h {
-    background-color: #2802ffb6;
-    border: 1px solid;
-    border: none;
-    width: 15vw;
-    margin: auto;
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-
+/* ******* */
 
 /* for mobile screens  */
 @media only screen and (min-width: 320px) and (max-width: 900px) {
 
 
-    .cont-heading{
-        margin-bottom: 1rem;
-    
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
     }
     
-
-    .cont-subheading{
-        width: 90%;
+    
+    .footer-container::before {
+        top: 200px;
+        left: -200px;
+        width: 800px;
+        height: 300px;
+    }
+    
+    .footer-container::after {
+        top: 200px;
+        left: 200px;
+        width: 800px;
+        height: 750px;
+        transform: rotate(-70deg);
+    }
+    
+    .footer-content-first,
+    .footer-content-second,
+    .footer-content-third{
+        width: 100%;
+    }
+    
+    /* ******* */
+    
+    .footer-content-second{
         margin: auto;
-        margin-bottom: 2rem;
+        margin-top: -3rem;
     }
-
-    .deets{
-        display: block;
-        margin:auto ;
-        margin-bottom: 1rem;
-    }
-
     
-
-    .button-h{
-        width: 60%;
+    .footer-links{
+        text-align: left;
+        margin-left: 5rem;
+    }
+    
+    /* ************ */
+    
+    .footer-content-third{
+        margin-top: 3rem;
+    }
+    .deets{
+        text-align: left;
+        margin-left: 5rem;
+    }
+    
+    .social-links{
+        margin-bottom: 1rem;
+        margin-left: 5rem;
     }
 }

@@ -41,8 +41,16 @@ const Advertise = () =>{
 
             {/* *********** */}
 
-            <section className="video-container">
-            <div className="video-half-container">
+
+
+            <section className="video-container" >
+                
+                <div className='headings'>
+                    <div className='heading-1'>HIGHLIGHTS</div>
+                    <div className='heading-2'>Our Work</div>
+                </div>
+
+                <div className="video-half-container">
                     <div className="video-half">
                         <iframe 
                             src="https://www.youtube.com/embed/_8K0ZcDRgIQ" 
@@ -86,8 +94,8 @@ const Advertise = () =>{
                         </iframe>
                     </div>
                 </div>
-
             </section>
+
 
             <Footer />
             <LowerFooter/>

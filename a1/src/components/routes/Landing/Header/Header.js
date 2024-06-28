@@ -15,7 +15,7 @@ const Header = () => {
             <div className="container">
                 <Link to="/" className="navbar-brand" onClick={scrollToTop}>
                     <img 
-                        src="./uploads/com-logo.ico" 
+                        src="./uploads/com-logo.webp" 
                         className="main-logo" 
                         alt="brand" 
                     />
