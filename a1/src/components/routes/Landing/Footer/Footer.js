@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                     <div className='social-links'>
                         
-                        <Link to="/" rel="noopener noreferrer" onClick={scrollToTop}>
+                        <Link to="https://www.linkedin.com/in/communiaide-communiaide-309aa5311/" rel="noopener noreferrer" onClick={scrollToTop}>
                             <img src="./uploads/linkedin.svg" alt="LinkedIn" className="social-icon" />
                         </Link>
                         
