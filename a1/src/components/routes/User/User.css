@@ -2,7 +2,7 @@
 
 
 .ui-super-container{
-    position: relative;
+    position: fixed;
     overflow: hidden;
     display: flex;
 }
@@ -10,13 +10,13 @@
 .ui-super-container::before {
     content: "";
     position: absolute;
-    top: 110px;
-    left: 20px;
+    top: 10px;
+    left: -200px;
     width: 900px;
     height: 1050px;
-    background: linear-gradient(40deg, #651FFF 9.95%, #00BCD4 92.81%);
+    background: linear-gradient(40deg, #651FFF 50%, #00BCD4 80%);
     opacity: 0.25; 
-    transform: rotate(-65deg);
+    transform: rotate(25deg);
     z-index: -10; 
 }
 
@@ -34,20 +34,24 @@
 }
 
 .ui-super-left{
-    width: 50%;
+    width: 60%;
 }
 
 .ui-super-right{
-    width: 50%;
+    width: 40%;
 }
 
 .ui-super-content{
     margin-top: 15rem;
 }
-
+.ui-super-bg{
+    width: 100%;
+    height: 100vh;
+}
 
 .tt-111{
     font-size: 3rem;
+    font-weight: 900;
 }
 
 /* ************** */
@@ -57,20 +61,20 @@
     align-items: center;
     color: black;
     position: relative;
-    background-color: #000000c5;
+    background-color: #000000cc;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
 }
 
 
 .ui-ph-bg{
     position: absolute;
-    top: -14rem;
+    top: -10rem;
     left: 0;
     width: 100%;
     object-fit: cover;
-    opacity: 0.75;
+    opacity: 0.8;
     z-index: -1;
 }
 
@@ -83,7 +87,8 @@
     color: white;
     margin: auto;
     font-size: 1.1rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    z-index: 10;
 }
 
 /* for mobile screens  */
@@ -99,6 +104,7 @@
     
 .ui-super-container{
     flex-direction: column;
+    height: 100vh;
 }
 
 .ui-super-container::before {
@@ -123,11 +129,11 @@
 
     .ui-super-left{
         width: 100%;
-        margin-bottom: 5rem;
     }
 
     .ui-super-content{
-        margin-top: 10rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
     }
     
     
@@ -137,12 +143,13 @@
 
     .ui-super-bg{
         width: 100%;
+        height: 70vh;
     }
 
 
     .ui-ph-fr-container{
         width: 100%;
-        height: 50vh;
+        height: 100vh;
     }
     
     
@@ -150,14 +157,15 @@
         left: 0;
         top:0;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
     }
     
     
     .ui-para {
-        width: 80%;
-        font-size: 1.1rem;
-        margin-top: 6rem;
+        width: 90%;
+        font-size: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
 
 }

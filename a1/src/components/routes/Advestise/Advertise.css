@@ -2,7 +2,7 @@
 
 
 .adv-super-container{
-    position: relative;
+    position: fixed;
     overflow: hidden;
     display: flex;
 }
@@ -10,13 +10,13 @@
 .adv-super-container::before {
     content: "";
     position: absolute;
-    top: 110px;
-    left: 20px;
+    top: 10px;
+    left: -200px;
     width: 900px;
     height: 1050px;
-    background: linear-gradient(40deg, #651FFF 9.95%, #00BCD4 92.81%);
+    background: linear-gradient(40deg, #651FFF 35%, #00BCD4 92.81%);
     opacity: 0.25; 
-    transform: rotate(-65deg);
+    transform: rotate(25deg);
     z-index: -10; 
 }
 
@@ -34,11 +34,16 @@
 }
 
 .adv-super-content{
-    margin-top: 12rem;
+    margin-top: 15rem;
 }
 
 .tt-2{
     font-family: 'TT Norms', sans-serif;
+}
+.tt-1{
+    font-size: 3rem;
+    font-weight: 900;
+
 }
 .adv-super-para {
     width: 75%;
@@ -50,7 +55,9 @@
     font-size: 1.1rem;
     margin-top: 3rem;
 }
-
+.adv-super-bg{
+    height: 100vh;
+}
 
 /* ************ */
 
@@ -60,6 +67,7 @@
 
     .adv-super-container{
         flex-direction: column;
+        height: 100vh;
     }
     
     .adv-super-container::before {
@@ -87,9 +95,10 @@
     .adv-super-right{
         width: 100%;
     }
-    
+
     .adv-super-content{
-        margin-top: 10rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
     }
     
     .adv-super-para{
@@ -98,9 +107,9 @@
         background: linear-gradient(to bottom right, #7842eb5e 40%, #00bbd46c );
     }
     .adv-super-bg{
-        width: 90%;
+        width: 100%;
         height: auto;
-        margin-bottom: 1rem;
+        height: 60vh;
     }
     
 }

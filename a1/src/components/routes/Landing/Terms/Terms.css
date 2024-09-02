@@ -1,23 +1,20 @@
 /* src/components/routes/Landing/Terms/Terms.css */
 
 
-
-
-
 .terms-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
     color: black;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 
 .terms-container::before {
     content: "";
     position: absolute;
-    top: 50px;
+    top: -150px;
     left: 60px;
     width: 800px;
     height: 1200px;
@@ -43,6 +40,7 @@
 
 .terms-heading{
     font-size: 2.5em;
+    font-weight: 800;
 }
 
 .terms-section{
@@ -54,6 +52,7 @@
 
 .terms-subheadings{
     font-size: 1.75em;
+    font-weight: 800;
 }
 
 .terms-sheadings{

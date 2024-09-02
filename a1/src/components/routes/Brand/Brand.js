@@ -6,7 +6,7 @@ import Header from "../Landing/Header/Header" ;
 import Footer from "../Landing/Footer/Footer";
 import LowerFooter from "../Landing/LowerFooter/LowerFooter";
 
-const Brand =  () =>{
+const Brand = () =>{
     
     return(
         <div>
@@ -24,9 +24,9 @@ const Brand =  () =>{
                             <h2 className="two-heading-2 tt-22">
                                 Your Brand Strategy Partner
                             </h2>
-                            <p className="brand-super-para">
+                            {/* <p className="brand-super-para">
                                 We craft powerful brand strategies that propel your business to new heights. Discover how our personalized approach can revolutionize your brand's market presence.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -40,6 +40,12 @@ const Brand =  () =>{
                 </div>
 
             </section>
+
+            
+             {/* Spacer to ensure content below is visible and can be scrolled to */}
+             <div style={{ height: '100vh' }}></div>
+
+
 
             {/* ******************** */}
 

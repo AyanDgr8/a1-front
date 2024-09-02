@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     color: black;
-    position: relative;
+    position: fixed;
     background-color: #000000c5;
     width: 100%;
     height: 100vh;
@@ -56,7 +56,9 @@
 
 
 /* ********* */
-
+.digital-t-cards-container{
+    background-color: black;
+}
 .digital-cards-container{
     display: flex;
     flex-direction: row;
@@ -95,7 +97,7 @@
     overflow: hidden;
 }
 
-.digital-t-cards-container::before {
+/* .digital-t-cards-container::before {
     content: "";
     position: absolute;
     top: 75px;
@@ -119,7 +121,7 @@
     opacity: 0.25;
     transform: rotate(-130deg);
     z-index: -10; 
-}
+} */
 
 
 .digital-t-cards{
@@ -136,7 +138,7 @@
 
 .card-left {
     align-self: flex-start;
-    margin-left: 5rem;
+    margin-left: 7rem;
     background: linear-gradient(158.27deg, #661fff8f 9.95%, #00bbd49f 92.81%);
 }
 
@@ -153,32 +155,37 @@
 .card-t-para{
     font-size: 1.1rem;
 }
+.digital-t-cards-bg{
+    margin-bottom: 2rem;
+
+}
 
 /* for mobile screens  */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 
     .digital-super-container {
-        background-color: #0e0d0d91;
+        background-color: #0e0d0dcb;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         overflow: hidden;
     }
     
     .digital-bg {
-        left: -5rem;
+        left: -12rem;
         width: auto;
-        height: 90vh;
+        height: 100vh;
     }
 
     
     .digital-super-content {
         margin-top: 5rem;
     }
+
     .digital-super-para {
         width: 90%;
         padding: 1rem;
         font-size: 1rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     

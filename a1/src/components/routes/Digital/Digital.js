@@ -6,7 +6,7 @@ import Header from "../Landing/Header/Header" ;
 import Footer from "../Landing/Footer/Footer";
 import LowerFooter from "../Landing/LowerFooter/LowerFooter";
 
-const Digital =  () =>{
+const Digital = () =>{
     return(
         <div>
 
@@ -33,6 +33,11 @@ const Digital =  () =>{
                 </div>
 
             </section>
+            
+
+             {/* Spacer to ensure content below is visible and can be scrolled to */}
+             <div style={{ height: '100vh' }}></div>
+
 
             {/* *************** */}
 

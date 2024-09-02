@@ -17,14 +17,15 @@ const Advertise = () =>{
                     <div className="adv-super-content">
                         <div className="two-headings">
                             <h1 className="two-heading-1 tt-1">
-                                Capture Attention with Impactful Imagery
+                                CREATING IMPACTFUL ADVERTISEMENTS
+                                {/* Capture Attention with Impactful Imagery */}
                             </h1>
                             <h2 className="two-heading-2 tt-2">
-                                Elevate Your Brand with Professional Advertisement Shoots
+                                Capturing Attention with Professional Advertisement Shoots
                             </h2>
-                            <p className="adv-super-para">
+                            {/* <p className="adv-super-para">
                                 We specialize in crafting captivating advertisements that resonate with your audience. Our team of experienced professionals is dedicated to bringing your vision to life, ensuring every frame tells your brand story with clarity and creativity.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -39,15 +40,20 @@ const Advertise = () =>{
 
             </section>
 
-            {/* *********** */}
 
+             {/* Spacer to ensure content below is visible and can be scrolled to */}
+             <div style={{ height: '100vh' }}></div>
+
+
+
+            {/* *******VIDEOS******* */}
 
 
             <section className="video-container" >
                 
                 <div className='headings'>
-                    <div className='heading-1'>HIGHLIGHTS</div>
-                    <div className='heading-2'>Our Work</div>
+                    <div className='heading-1'>TRENDING</div>
+                    <div className='heading-2'>Top Collection</div>
                 </div>
 
                 <div className="video-half-container">
@@ -67,16 +73,14 @@ const Advertise = () =>{
                             allowFullScreen>
                         </iframe>
                     </div>
-                </div>
-                <div className="video-full">
-                    <iframe 
-                        src="https://www.youtube.com/embed/smlUn4wNBTU" 
-                        title="YouTube third" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen>
-                    </iframe>
-                </div>
-                <div className="video-half-container">
+                    <div className="video-half">
+                        <iframe 
+                            src="https://www.youtube.com/embed/smlUn4wNBTU" 
+                            title="YouTube third" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen>
+                        </iframe>
+                    </div>
                     <div className="video-half">
                         <iframe 
                             src="https://www.youtube.com/embed/0pxJN8mvQ5Q"  

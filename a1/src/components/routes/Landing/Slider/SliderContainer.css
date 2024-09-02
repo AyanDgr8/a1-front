@@ -5,11 +5,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
     color: black;
     overflow: hidden;
+    background-color: black;
 }
-
+/* 
 
 .SliderContainer-container::before {
     content: "";
@@ -35,7 +35,7 @@
     opacity: 0.25;
     transform: rotate(-50deg);
     z-index: -10; 
-}
+} */
 
 .sl-heading{
     margin-bottom: 3rem;
@@ -59,3 +59,13 @@
 .machines-slider .slick-arrow.slick-next {
     display: none !important;
 }
+
+/* for mobile screens  */
+/* @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .conti-1{
+        font-size: 2.5rem;
+
+    }
+
+} */

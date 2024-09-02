@@ -1,10 +1,18 @@
 /* src/components/routes/Landing/LowerFooter/LowerFooter.css */
 
 
-.lower-footer-lines{
-    margin-top: 1rem;
-    font-weight: 400;
+.lower-footer-content{
+    position: relative;
+    margin: auto;
 }
+
+.lower-footer-lines{
+    font-weight: 400;
+    background-color:white;
+    color: black;
+    margin: auto;
+    width: 100%;
+} 
 
 
 /* for mobile screens */
@@ -12,5 +20,6 @@
     .lower-footer-content{
         width: 100%;
         margin: auto;
+        background-color: white;
     }
 }

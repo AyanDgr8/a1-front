@@ -8,12 +8,6 @@ import LowerFooter from "../Landing/LowerFooter/LowerFooter";
 
 const User = () =>{
 
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
     return(
         <div>
             <Header />
@@ -42,6 +36,10 @@ const User = () =>{
                 </div>
 
             </section>
+            
+             {/* Spacer to ensure content below is visible and can be scrolled to */}
+             <div style={{ height: '100vh' }}></div>
+
 
             <section className="ui-ph-fr-container">
                 <img 
@@ -51,14 +49,13 @@ const User = () =>{
                 />
                 <div className="ui-para">
                     <p>
-                        At Communiaide, we excel in creating intuitive UI/UX designs that captivate users and drive business growth. Explore how our expertise can revolutionize your digital presence for unparalleled user satisfaction and success.
+                        At Communiaide, we excel in creating intuitive UI/UX designs that captivate users and drive business growth. Our innovative approach ensures that every interaction is seamless, engaging, and designed to meet the unique needs of your audience. By focusing on user-centered design principles, we create digital experiences that not only look stunning but also deliver exceptional functionality and ease of use.
                     </p>
-                    <button 
-                        type="button" 
-                        className="btn btn-light explore_btn"
-                        onClick={() => scrollToSection('footer')}>
-                            CONTACT US
-                    </button>
+                </div>
+                <div className="ui-para">
+                    <p>
+                        Explore how our expertise can revolutionize your digital presence for unparalleled user satisfaction and success. Whether you're looking to redesign your website, develop a new mobile app, or enhance your existing digital products, our team is dedicated to delivering solutions that elevate your brand and set you apart from the competition. Partner with Communiaide and experience the transformative power of exceptional design.
+                    </p>
                 </div>
                 
             </section>

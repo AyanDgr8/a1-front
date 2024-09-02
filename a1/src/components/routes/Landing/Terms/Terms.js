@@ -1,6 +1,7 @@
 // src/components/routes/Landing/Terms/Terms.js
 
 import React from 'react';
+// import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import LowerFooter from '../LowerFooter/LowerFooter';
 import './Terms.css';
@@ -8,6 +9,7 @@ import './Terms.css';
 const Terms = () => {
     return (
         <div>
+            {/* <Header /> */}
             <section className='terms-container'>
                 <h1 className='terms-heading'>Terms and Conditions</h1>
 
